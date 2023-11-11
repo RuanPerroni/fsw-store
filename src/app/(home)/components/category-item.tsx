@@ -20,8 +20,9 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
     headphones: <HeadphonesIcon size={16} />,
     mousepads: <SquareIcon size={16} />,
     speakers: <SpeakerIcon size={16} />,
-    mouse: <MouseIcon size={16} />,
+    mouses: <MouseIcon size={16} />,
   };
+
   return (
     <Badge
       variant="outline"
