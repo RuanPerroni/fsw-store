@@ -90,7 +90,7 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
 
   const removeProductFromCart = (productId: string) => {
     setProducts((prev) =>
-      prev.filter((cartProduct) => cartProduct.id === productId),
+      prev.filter((cartProduct) => cartProduct.id != productId),
     );
   };
 
@@ -101,6 +101,7 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
         addProductToCart,
         decreaseProductQuantity,
         increaseProductQuantity,
+        removeProductFromCart,
         cartTotalPrice: 0,
         cartBasePrice: 0,
         cartTotalDiscount: 0,
